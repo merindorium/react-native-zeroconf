@@ -1,11 +1,11 @@
 buildscript {
-  repositories {
-    mavenCentral()
-  }
+    repositories {
+        mavenCentral()
+    }
 
-  dependencies {
-    classpath 'com.android.tools.build:gradle:1.1.3'
-  }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.1.3'
+    }
 }
 
 apply plugin: 'com.android.library'
@@ -26,10 +26,11 @@ android {
 }
 
 repositories {
-  mavenCentral()
+    mavenCentral()
 }
 
 dependencies {
     compile 'com.facebook.react:react-native:+'
-    compile 'com.youview:tinydnssd:1.2.7'
+    compile files("../../tinydnssd.jar")
+
 }
