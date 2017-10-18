@@ -31,6 +31,6 @@ repositories {
 
 dependencies {
     compile 'com.facebook.react:react-native:+'
-    compile files("../../tinydnssd.jar")
+    compile 'com.github.merindorium:tinydnssd:1.2.1'
 
 }
